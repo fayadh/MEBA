@@ -1,3 +1,17 @@
 <template name="MasterLayout">
-  {{> yield}}
+	<nav>
+		<a href="/">
+		<img src="meba.png" id='MEBALogo'>
+		</a>
+		<div id='products-profile-container'>
+			<a class='nav-link' href="/products">products</a>
+			<a class='nav-link' href="/profile">profile</a>
+		</div>
+		<div id='container-link-container'>
+			<a class='nav-link' href="/contact">contact</a>
+		</div>
+	</nav>
+	<div id='main-yield-container'>
+		  {{> yield}}
+	</div>
 </template>

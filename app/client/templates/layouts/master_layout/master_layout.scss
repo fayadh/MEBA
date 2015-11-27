@@ -1,0 +1,41 @@
+nav {
+	padding: 1em;
+	#MEBALogo {
+		width: 180px;
+	}
+	#products-profile-container {
+		display: inline-block;
+		margin: auto;
+		a {
+			display: inline-block;
+		}
+	}
+	#container-link-container {
+		display: inline-block;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	&:hover {
+		text-decoration: none;
+	}
+	&:visited {
+		text-decoration: none;
+	}
+}
+
+.nav-link {
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	padding: 0 1em 0 1em;
+	font-size: medium;
+	color: grey;
+	&:hover {
+		color: black;
+	}
+}
+
+
