@@ -1,5 +1,29 @@
 /*****************************************************************************/
 /* main: Style */
 /*****************************************************************************/
+
+body {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .main {
+}
+
+.content {
+}
+
+.cont {
+	padding: 1em;
+}
+
+.cont-trans {
+	@extend .cont;
+	background-color: white;
+	opacity: 0.5;
+	color: black;
+}
+
+.title-capital {
+	text-transform: uppercase;
+	letter-spacing: 4px;
 }

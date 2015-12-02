@@ -1,0 +1,93 @@
+	/*****************************************************************************/
+/* SideMenu: Style */
+/*****************************************************************************/
+.side-menu {
+	overflow: scroll;
+	position: absolute;
+	height: 100vh;
+	max-width:400px;
+	z-index: 5;
+	background-color: #fff;
+	opacity: 0.95;
+	text-align: left;
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);
+    		box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);
+	#close-button {
+		width: 25px;
+		height: 25px;
+		fill: #555;
+		-webkit-transition:0.1s ease all;
+		   -moz-transition:0.1s ease all; 
+				transition:0.1s ease all; 
+		&:hover {
+			fill: #f11212;
+		}
+	}
+	.closeSideMenu {
+		float: right;
+		padding: 1em 0 0 0;
+	}
+	.sideMenuToggleContainer {
+		display: block;
+		height: 40px;
+	}
+	.sideMenuTitle {
+		display: block;
+		letter-spacing: 4px;
+//		text-transform: uppercase;
+		padding: 0 0.3em 1em;
+		text-align: left;
+		margin: 1em 0;
+		a {
+			letter-spacing: 4px;
+			font-weight: 300;
+			color: black;
+		}
+		img {
+			width: 80%;
+			max-width: 500px;
+		}
+		#slogan {
+			font-size: 1.3em;
+			font-style: italic;
+			margin-top: 0.4em;
+		}
+	}
+	.navLinks {
+		a {
+			color: grey;
+			letter-spacing: 1px;
+		}
+		.navLink {
+			padding: 0 10% 2%;
+			display: block;
+			color: #333;
+		}
+	}
+
+	a {
+		font-size: 1.3em;
+	}
+}
+
+//Customize the scroll bar.
+::-webkit-scrollbar-track {
+      background-color: #b46868;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+    display: none;
+	background-color: rgba(0, 0, 0, 0.2); 
+	&:hover {
+		display: initial;
+	};
+}
+
+::-webkit-scrollbar-button {
+      background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+

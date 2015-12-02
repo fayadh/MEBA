@@ -1,5 +1,18 @@
 nav {
 	padding: 1em;
+	.nav-link {
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		padding: 0 1em 0 1em;
+		font-size: medium;
+		color: grey;
+		transition: color 0.5s;
+		&:hover {
+			color: white;
+		}
+	}
+	
 	#MEBALogo {
 		width: 180px;
 	}
@@ -26,16 +39,5 @@ a {
 	}
 }
 
-.nav-link {
-	display: inline-block;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	padding: 0 1em 0 1em;
-	font-size: medium;
-	color: grey;
-	&:hover {
-		color: black;
-	}
-}
 
 

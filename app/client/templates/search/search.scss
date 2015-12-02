@@ -1,0 +1,20 @@
+/*****************************************************************************/
+/* Search: Style */
+/*****************************************************************************/
+.search {
+	.profile_container {
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: black;
+			padding: 1em;
+			text-transform: uppercase;
+			display: block;
+		}
+		.profile_picture {
+			display: block;
+			margin: auto;
+			border-radius: 100%;
+		}	
+	}
+}
