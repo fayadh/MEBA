@@ -33,5 +33,12 @@ Template.MasterLayout.events({
 			})
 			slideX('#MEBALogo', -$('#MEBALogo').width() - 50)	
 		}
+	},
+	'click #contact-trigger': function() {
 	}
 });
+
+Template.MasterLayout.onRendered(function() {
+	// $('#contact-modal').modal({ show: false})
+	// $('#youtube-modal').modal({ show: false})
+})

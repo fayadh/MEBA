@@ -12,9 +12,11 @@
 				<a class='nav-link navTrig'>Products & Profile</a>
 			</div>
 			<div id='container-link-container'>
-				<a class='nav-link' href="/contact">contact</a>
+				<a class='nav-link' id='contact-trigger' data-toggle="modal" data-target="#contact-modal">contact</a>
 			</div>
 		</nav>
 		{{> yield}}
+		{{> ContactUs}}
+		{{> YoutubeModal}}
 	</div>
 </template>

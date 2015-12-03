@@ -1,27 +1,23 @@
 /*****************************************************************************/
-/* Home: Event Handlers */
+/* YoutubeModal: Event Handlers */
 /*****************************************************************************/
-Template.Home.events({
-	'click #trigger-youtube': function() {
-		console.log('clicked trigger youtube')
-		$('#youtube-modal').modal('show');
-	}
+Template.YoutubeModal.events({
 });
 
 /*****************************************************************************/
-/* Home: Helpers */
+/* YoutubeModal: Helpers */
 /*****************************************************************************/
-Template.Home.helpers({
+Template.YoutubeModal.helpers({
 });
 
 /*****************************************************************************/
-/* Home: Lifecycle Hooks */
+/* YoutubeModal: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Home.onCreated(function () {
+Template.YoutubeModal.onCreated(function () {
 });
 
-Template.Home.onRendered(function () {
+Template.YoutubeModal.onRendered(function () {
 });
 
-Template.Home.onDestroyed(function () {
+Template.YoutubeModal.onDestroyed(function () {
 });
