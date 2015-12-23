@@ -2,4 +2,31 @@
 /* YoutubeModal: Style */
 /*****************************************************************************/
 .youtube-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+	transition: top 2s;
+	#youtube-modal-container {
+		height: 80%;
+		width: 80%;
+		display: block;
+		margin: auto;
+		margin-top: 5%;
+		iframe {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	#close-youtube-modal {
+		color: white;
+		background: transparent;
+		float: right;
+		text-align: right;
+		font-size: large;
+		padding: 0.5em;
+	}
 }

@@ -9,6 +9,12 @@ body {
 .main {
 }
 
+.lead {
+    color: grey;
+    padding-top: 1em;
+	font-size: 1.33em;
+}
+
 .content {
 }
 
@@ -26,4 +32,24 @@ body {
 .title-capital {
 	text-transform: uppercase;
 	letter-spacing: 4px;
+	margin: 0 0 1em 0;
+}
+
+.title-content-page {
+	@extend .title-capital;
+	margin: 1em 0 1em 0;
+	color: silver;
+}
+
+.p1 {
+	padding: 1em;
+}
+
+//vertical padding
+.p1v {
+	padding: 1em 0;
+}
+
+.p2 {
+	padding: 2em;
 }

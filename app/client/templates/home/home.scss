@@ -2,20 +2,49 @@
 /* Home: Style */
 /*****************************************************************************/
 .home {
+//    background-color: RGBA(128, 128, 128, 0.6);
+//    min-height: 84vh; /* Measured. */	
+	font-size: 1.33em;
+	color: sandybrown;
+	
+	#products-profile {
+		background-color: RGBA(0, 0, 0, 0.25);
+	}
+	
 	.cont {
 		div {
 			margin: 0.5em 0;
 		}
 		a {
-			color: grey;
+			color: silver;
 			transition: color 0.5s;
+			text-transform: uppercase;
 			&:hover {
 				color: white;
 				text-decoration: none;
 			};
 		}
+		.inner-cont {
+			display: inline-block;
+			background-color: RGBA(0, 0, 0, 0.25);
+			color: silver;
+			padding: 1em;
+		}
 	}
 	
+	#trigger-youtube-container {
+	    margin: 2em 0;
+	    text-transform: uppercase;
+	    letter-spacing: 2px;
+	}
+	
+	.footer {
+		text-align: center;
+		color: RGB(40, 40, 40);
+		padding: 1em;
+		text-transform: uppercase;
+		font-size: 0.7	5em;
+	}
 	
 	/** VIDEO BACKGROUND **/
 	video {

@@ -2,6 +2,9 @@
 /* YoutubeModal: Event Handlers */
 /*****************************************************************************/
 Template.YoutubeModal.events({
+	'click #close-youtube-modal': function() {
+		
+	}
 });
 
 /*****************************************************************************/
@@ -17,6 +20,10 @@ Template.YoutubeModal.onCreated(function () {
 });
 
 Template.YoutubeModal.onRendered(function () {
+	//start the transition.
+	Meteor.setTimeout(function() {
+		$('.youtube-modal').css('top', '0%')
+	}, 500)
 });
 
 Template.YoutubeModal.onDestroyed(function () {

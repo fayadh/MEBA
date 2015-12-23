@@ -1,18 +1,9 @@
 <template name="YoutubeModal">
   <div class="youtube-modal">
-	  <div id="youtube-modal" class="modal fade" role="dialog">
-	    <div class="modal-dialog">
-	      <div class="modal-content">
-	        <div class="modal-body">
-				<iframe id="ytplayer" type="text/html" width="640" height="390"
-				  src="http://www.youtube.com/embed/Cm25_zNVj30?origin=http://example.com"
-				  frameborder="0"></iframe>
-	        </div>
-	        <div class="modal-footer">
-	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
+	<div id='youtube-modal-container'>
+		<span id='close-youtube-modal'> CLOSE X </span>
+		<iframe id="ytplayer" type="text/html" src="http://www.youtube.com/embed/Cm25_zNVj30?origin=http://example.com&rel=0&autoplay=1"
+		  frameborder="0" allowfullscreen></iframe>
+	</div>
   </div>
 </template>
