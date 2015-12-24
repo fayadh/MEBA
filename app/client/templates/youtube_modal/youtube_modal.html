@@ -1,9 +1,10 @@
 <template name="YoutubeModal">
   <div class="youtube-modal">
 	<div id='youtube-modal-container'>
-		<span id='close-youtube-modal'> CLOSE X </span>
-		<iframe id="ytplayer" type="text/html" src="http://www.youtube.com/embed/Cm25_zNVj30?origin=http://example.com&rel=0&autoplay=1"
-		  frameborder="0" allowfullscreen></iframe>
+		<div id='close-youtube-modal'>
+			CLOSE <i class="fa fa-close fa-lg"></i>
+		</div>
+		<div id='player'></div>
 	</div>
   </div>
 </template>

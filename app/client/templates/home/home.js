@@ -3,7 +3,6 @@
 /*****************************************************************************/
 Template.Home.events({
 	'click #trigger-youtube': function() {
-		console.log('clicked trigger youtube')
 		Blaze.render(Template.YoutubeModal, document.getElementsByClassName('master-yield')[0])
 	}
 });
