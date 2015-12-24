@@ -1,45 +1,47 @@
 <template name="SideMenu">
 	<div class="side-menu col-md-3">
-		<div>
-			<div class="sideMenuToggleContainer">
-				<span class='btn navTrig closeSideMenu'>
-					<i class='fa fa-close fa-lg'></i>
+		<div id='side-menu-content'>
+			<div>
+				<div class="sideMenuToggleContainer">
+					<span class='btn navTrig closeSideMenu'>
+						<i class='fa fa-close fa-lg'></i>
+					</span>
+				</div>
+				<span class='sideMenuTitle navTrig'>
+					<a href="/"><img src="/meba.png"></a>
 				</span>
 			</div>
-			<span class='sideMenuTitle navTrig'>
-	    		<a href="/"><img src="/meba.png"></a>
-	    	</span>
-		</div>
-		<div class='navLinks'>
-			<hr>
+			<div class='navLinks'>
+				<hr>
 			
-			<span class='navLink navTrig productsProfileContainer'><a href="/products" class='productsProfile'>Products</a></span>
+				<span class='navLink navTrig productsProfileContainer'><a href="/products" class='productsProfile'>Products</a></span>
 			
-			<span class='navLink navTrig'><a href="/products/alloys">Alloys</a></span>
-			<span class='navLink navTrig'><a href="/products/aluminum_based">Aluminum Based</a></span>
-			<span class='navLink navTrig'><a href="/products/cement_and_crusher">Cement & Crusher</a></span>
-			<span class='navLink navTrig'><a href="/products/copper_based">Copper Based</a></span>
-			<span class='navLink navTrig'><a href="/products/drainage">Drainage</a></span>
-			<span class='navLink navTrig'><a href="/products/machined_parts">Machined Parts</a></span>
-			<span class='navLink navTrig'><a href="/products/oil_field_consumable_parts">Oil Field Consumable Parts</a></span>
-			<span class='navLink navTrig'><a href="/products/pump_parts">Pump Parts</a></span>
-			<span class='navLink navTrig'><a href="/products/steel_parts_and_smelters">Steel Parts & Smelters</a></span>
+				<span class='navLink navTrig'><a href="/products/alloys">Alloys</a></span>
+				<span class='navLink navTrig'><a href="/products/aluminum_based">Aluminum Based</a></span>
+				<span class='navLink navTrig'><a href="/products/cement_and_crusher">Cement & Crusher</a></span>
+				<span class='navLink navTrig'><a href="/products/copper_based">Copper Based</a></span>
+				<span class='navLink navTrig'><a href="/products/drainage">Drainage</a></span>
+				<span class='navLink navTrig'><a href="/products/machined_parts">Machined Parts</a></span>
+				<span class='navLink navTrig'><a href="/products/oil_field_consumable_parts">Oil Field Consumable Parts</a></span>
+				<span class='navLink navTrig'><a href="/products/pump_parts">Pump Parts</a></span>
+				<span class='navLink navTrig'><a href="/products/steel_parts_and_smelters">Steel Parts & Smelters</a></span>
 			
-			<hr>
+				<hr>
 			
-			<span class='navLink navTrig productsProfileContainer'><a href="/profile" class='productsProfile'>Profile</a></span>
+				<span class='navLink navTrig productsProfileContainer'><a href="/profile" class='productsProfile'>Profile</a></span>
 			
-			<span class='navLink navTrig'><a href="/profile/centrifugal_casting">Centrifugal Casting</a></span>
-			<span class='navLink navTrig'><a href="/profile/foundry">Foundry</a></span>
-			<span class='navLink navTrig'><a href="/profile/heat_treatment">Heat Treatment</a></span>
-			<span class='navLink navTrig'><a href="/profile/machine_shop">Machine Shop</a></span>
-			<span class='navLink navTrig'><a href="/profile/quality_control">Quality Control</a></span>
-			<span class='navLink navTrig'><a href="/profile/tool_room_and_pattern_shop">Tool Room & Pattern Shop</a></span>
+				<span class='navLink navTrig'><a href="/profile/centrifugal_casting">Centrifugal Casting</a></span>
+				<span class='navLink navTrig'><a href="/profile/foundry">Foundry</a></span>
+				<span class='navLink navTrig'><a href="/profile/heat_treatment">Heat Treatment</a></span>
+				<span class='navLink navTrig'><a href="/profile/machine_shop">Machine Shop</a></span>
+				<span class='navLink navTrig'><a href="/profile/quality_control">Quality Control</a></span>
+				<span class='navLink navTrig'><a href="/profile/tool_room_and_pattern_shop">Tool Room & Pattern Shop</a></span>
 			
-			<hr>
+				<hr>
 			
-			<span class='navLink navTrig sideMenuTitle'><a href="/about_us">About Us</a></span>
-			<span class='navLink navTrig sideMenuTitle' data-toggle="modal" data-target="#myModal"><a href="/contact">Contact Us</a></span>
+				<span class='navLink navTrig sideMenuTitle'><a href="/about_us">About Us</a></span>
+				<span class='navLink navTrig sideMenuTitle' data-toggle="modal" data-target="#myModal"><a href="/contact">Contact Us</a></span>
+			</div>
 		</div>
 	</div>
 </template>

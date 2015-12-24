@@ -1,18 +1,20 @@
 <template name="MasterLayout">
 	{{#if sideMenuToggle}}
-		{{> SideMenu}}
+	{{> SideMenu}}
 	{{/if}}
 	
 	<div class='master-yield container-fluid'>
 		<nav>
 			<a href="/">
-			<img src="/meba.png" id='MEBALogo'>
+				<img src="/meba.png" id='MEBALogo'>
 			</a>
-			<div id='products-profile-container'>
-				<a class='nav-link navTrig'>Products & Profile</a>
-			</div>
-			<div id='container-link-container'>
-				<a class='nav-link' id='contact-trigger' data-toggle="modal" data-target="#contact-modal">contact</a>
+			<div id='nav-links-container'>
+				<div id='products-profile-container'>
+					<a class='nav-link navTrig'>Products & Profile</a>
+				</div>
+				<div id='container-link-container'>
+					<a class='nav-link' id='contact-trigger' data-toggle="modal" data-target="#contact-modal">contact</a>
+				</div>
 			</div>
 		</nav>
 		{{> yield}}

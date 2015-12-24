@@ -2,6 +2,9 @@
 /* SideMenu: Style */
 /*****************************************************************************/
 .side-menu {
+	.side-menu-content {
+		padding-bottom: 4em;
+	}
 	overflow: scroll;
 	position: fixed;
 	height: 100vh;
@@ -12,6 +15,9 @@
 	text-align: left;
 	-webkit-box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);
     		box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);
+	.fa-close {
+		color: purple;
+	}
 	#close-button {
 		width: 25px;
 		height: 25px;

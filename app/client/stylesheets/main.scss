@@ -1,6 +1,7 @@
 /*****************************************************************************/
 /* main: Style */
 /*****************************************************************************/
+$ss: 520px;
 
 body {
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,6 +41,18 @@ body {
 	@extend .title-capital;
 	margin: 1em 0 1em 0;
 	color: silver;
+	font-size: 4em;
+	text-align: center;
+}
+
+@media only screen and (max-width: $ss) {
+   .title-content-page { 
+	   font-size: 2em !important;
+	   line-height: 1.314em;
+   }
+	.nav-links-container {
+		padding: 1em;
+	}
 }
 
 .p1 {

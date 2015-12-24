@@ -23,7 +23,11 @@ Template.Home.onCreated(function () {
 });
 
 Template.Home.onRendered(function () {
+	//set the nav link color to white.
+	$('.nav-link').hover(function() { $(this).css('color', 'white') })
 });
 
 Template.Home.onDestroyed(function () {
+	$('.nav-link').css('color', 'silver')
+	$('.nav-link').hover(function() { $(this).css('color', 'black') })
 });

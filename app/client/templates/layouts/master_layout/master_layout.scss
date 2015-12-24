@@ -1,3 +1,5 @@
+$ss: 520px;
+
 nav {
 	padding: 1em;
 	font-size: 1.618em;
@@ -10,7 +12,7 @@ nav {
 		color: grey;
 		transition: color 0.5s;
 		&:hover {
-			color: white;
+			color: black;
 		}
 	}
 	
@@ -26,6 +28,16 @@ nav {
 	}
 	#container-link-container {
 		display: inline-block;
+	}
+	
+	#nav-links-container {
+		display: inline-block;
+	}
+
+	@media only screen and (max-width: $ss) {
+		#nav-links-container {
+			padding: 1em 0;
+		}
 	}
 }
 

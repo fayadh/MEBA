@@ -68,6 +68,12 @@ Router.route('products/pump_parts', {
   where: 'client'
 });
 
+Router.route('products/drainage', {
+  name: 'drainage',
+  controller: 'DrainageController',
+  where: 'client'
+});
+
 /////////////////////////////////////////////////////////////
 ////					PROFILE							 ////
 /////////////////////////////////////////////////////////////
@@ -129,3 +135,4 @@ Router.route('contact', {
   controller: 'ContactUsController',
   where: 'client'
 });
+
