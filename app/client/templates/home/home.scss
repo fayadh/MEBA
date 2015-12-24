@@ -64,8 +64,6 @@
 	        width: 100%;
 	        height: auto;
 	    }
-
-	        
 	}
 	@media (max-aspect-ratio: 16/9) {
 	    video {
@@ -76,9 +74,9 @@
 	}
 	/** Phone and Tablet */
 	@media screen and (max-device-width: 800px) {
-	    video {
-	        display: none;
-	    }
+	    //video {
+//	        display: none;
+//	    }
 	    background-size: cover;
         background-position: center;
         height: 100%;
