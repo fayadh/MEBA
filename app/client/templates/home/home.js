@@ -4,6 +4,9 @@
 Template.Home.events({
 	'click #trigger-youtube': function() {
 		Blaze.render(Template.YoutubeModal, document.getElementsByClassName('master-yield')[0])
+		Meteor.setTimeout(function() {
+			$('video')[0].pause()
+		}, 1500)
 	}
 });
 

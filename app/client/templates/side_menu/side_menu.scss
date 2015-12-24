@@ -3,7 +3,7 @@
 /*****************************************************************************/
 .side-menu {
 	overflow: scroll;
-	position: absolute;
+	position: fixed;
 	height: 100vh;
 	max-width:400px;
 	z-index: 5;
@@ -38,11 +38,6 @@
 		padding: 0 0.3em 1em;
 		text-align: left;
 		margin: 1em 0;
-		a {
-			letter-spacing: 4px;
-			font-weight: 300;
-			color: black;
-		}
 		img {
 			width: 80%;
 			max-width: 500px;
@@ -51,6 +46,15 @@
 			font-size: 1.3em;
 			font-style: italic;
 			margin-top: 0.4em;
+		}
+	}
+	.productsProfileContainer {
+		margin: 1.618em 0;
+		.productsProfile {
+			color: black !important;
+			letter-spacing: 12px !important;
+			text-align: center !important;
+			text-transform: uppercase !important;
 		}
 	}
 	.navLinks {
