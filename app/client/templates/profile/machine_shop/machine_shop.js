@@ -8,6 +8,12 @@ Template.MachineShop.events({
 /* MachineShop: Helpers */
 /*****************************************************************************/
 Template.MachineShop.helpers({
+	'images': function() {
+		var a = []
+		var number_of_pictures = 6
+		_.times(number_of_pictures, function() { a.push('') })
+		return a
+	}
 });
 
 /*****************************************************************************/

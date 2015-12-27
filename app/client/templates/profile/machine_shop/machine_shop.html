@@ -5,12 +5,9 @@
 				<h2 class='title-content-page'>{{subsection_name}}</h2>
 			</div>
 			<div class='carousel'>
-				<img src='/profile/machine_shop/1.jpg'>
-				<img src='/profile/machine_shop/2.jpg'>
-				<img src='/profile/machine_shop/3.jpg'>
-				<img src='/profile/machine_shop/4.jpg'>
-				<img src='/profile/machine_shop/5.jpg'>
-				<img src='/profile/machine_shop/6.jpg'>
+				{{#each images}}
+					<img src='/profile/{{add_ subsection_name}}/{{math @index "+" 1}}.jpg'>
+				{{/each}}
 			</div>
 			<div>
 				A machine shop is a facility with equipment and supplies for machining, a process where parts are cut, 

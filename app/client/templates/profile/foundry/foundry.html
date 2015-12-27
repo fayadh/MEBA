@@ -4,6 +4,11 @@
 			<div>
 				<h2 class='title-content-page'>{{subsection_name}}</h2>
 			</div>
+			<div class='carousel'>
+				{{#each images}}
+					<img src='/profile/{{add_ subsection_name}}/{{math @index "+" 1}}.jpg'>
+				{{/each}}
+			</div>
 			<div>
 				<div class='lead'>
 				MEBA’s foundry produces various metal castings. We specialise in common metals processing including aluminium 

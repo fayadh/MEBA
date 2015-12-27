@@ -8,9 +8,6 @@ Template.ImageContainer.events({
 /* ImageContainer: Helpers */
 /*****************************************************************************/
 Template.ImageContainer.helpers({
-	'add_': function(string) {
-		return string.replace(/ /g, "_").toLowerCase()
-	}
 });
 
 /*****************************************************************************/

@@ -1,10 +1,19 @@
 <template name="QualityControl">
 	<div class="quality-control">
 		<div class="col-md-6 col-md-offset-3">
-			<h3>Quality Control</h3>
 			<div>
-				Quality control, or QC for short, is a process by which entities review the quality of all 
-				factors involved in production. <br><br>
+				<h2 class='title-content-page'>{{subsection_name}}</h2>
+			</div>
+			<div class='carousel'>
+				{{#each images}}
+					<img src='/profile/{{add_ subsection_name}}/{{math @index "+" 1}}.jpg'>
+				{{/each}}
+			</div>
+			<div>
+				<div class='lead'>
+					Quality control, or QC for short, is a process by which entities review the quality of all 
+					factors involved in production.
+				</div>
 				
 				Controls include product inspection, where every product is examined visually, and often using a 
 				stereo microscope for fine detail before the product is supplied to customer. <br><br>

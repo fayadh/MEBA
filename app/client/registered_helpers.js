@@ -20,6 +20,9 @@ Template.registerHelper('encodeURI', function(string) {
 	return encodeURI(string)
 })
 
+Template.registerHelper('add_', function(string) {
+	return string.replace(/ /g, "_").toLowerCase()
+})
 
 Handlebars.registerHelper("math", function(lvalue, operator, rvalue, options) {
     if (arguments.length < 4) {
