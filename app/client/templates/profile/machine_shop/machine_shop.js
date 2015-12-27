@@ -17,6 +17,11 @@ Template.MachineShop.onCreated(function () {
 });
 
 Template.MachineShop.onRendered(function () {
+	$('.carousel').slick({
+		arrows: true,
+		autoplay: true,
+		mobileFirst: true
+	});
 });
 
 Template.MachineShop.onDestroyed(function () {

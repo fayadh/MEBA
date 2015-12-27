@@ -17,11 +17,6 @@ Template.Alloys.onCreated(function () {
 });
 
 Template.Alloys.onRendered(function () {
-	$('.carousel').slick({
-		arrows: true,
-		autoplay: true,
-		mobileFirst: true
-	});
 });
 
 Template.Alloys.onDestroyed(function () {
