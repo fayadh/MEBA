@@ -1,17 +1,22 @@
 <template name="ProductsDisplay">
-  <div class="products-display">
-	<div>
-		<h2 class='title-content-page'>{{subsection_name}}</h2>
-	</div>
-	<div class='images-nav row'>
-		<div class='col-md-10 col-md-offset-1'>
-			{{#each products}}
-				{{> ImageContainer colMd=4 colSm=6 img_id=@index page=subsection_name title=this}}
-			{{/each}}
+	<div class="products-display">
+		<div>
+			<h2 class='title-content-page'>{{subsection_name}}</h2>
 		</div>
-	</div>
-	<div class='inquire-container'>
-		Don't see what you're looking for? <a>Inquire</a>, and we'll help you out.
-	</div>
-  </div>
-</template>
+		<div class='images-nav row'>
+			<div class='col-md-10 col-md-offset-1'>
+				{{#each products}}
+				{{> ImageContainer colMd=4 colSm=6 img_id=@index page=subsection_name title=this}}
+				{{/each}}
+			</div>
+		</div>
+		<div class='inquire-container'>
+			Don't see what you're looking for? <br>
+			<a href="mailto:hello@meba.bh?Subject=Inquiry:%20{{encodeURI subsection_name}}&
+			body={{encodeURI 'Hello, \n\n We are looking to inquire about a product that is not available in '}}
+			{{encodeURI subsection_name}}.
+			{{encodeURI '\n\n Sincerely, \n\n <YOUR NAME>'}}">
+				Inquire</a>, and we'll help you out.
+			</div>
+		</div>
+	</template>
