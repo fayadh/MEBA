@@ -5,7 +5,13 @@ Template.YoutubeModal.events({
 	'click #close-youtube-modal': function() {
 		//Send down.
 		$('.youtube-modal').css('top', '100%')
-		$('video')[0].play()
+		var current_route = Router.current().location.get().href
+		
+		//Re-play only on home.
+		if(current_route === '/') {
+			$('video')[0].play()
+		}
+		
 		Meteor.setTimeout(function() {
 			// remove
 			var view = Blaze.getView($('.youtube-modal')[0])
