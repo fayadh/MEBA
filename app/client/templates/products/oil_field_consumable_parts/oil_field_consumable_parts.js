@@ -8,6 +8,15 @@ Template.OilFieldConsumableParts.events({
 /* OilFieldConsumableParts: Helpers */
 /*****************************************************************************/
 Template.OilFieldConsumableParts.helpers({
+	'products': function() {
+		return [
+			'Scrapers and Brush Pads',
+			'Stabilizer',
+			'Stabilizer',
+			'Stabilizer',
+			'Group Photo'
+		]
+	}
 });
 
 /*****************************************************************************/

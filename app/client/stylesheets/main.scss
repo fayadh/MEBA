@@ -31,6 +31,10 @@ body {
 	color: black;
 }
 
+//.container-fluid {
+//	padding: 0;
+//}
+
 .title-capital {
 	text-transform: uppercase;
 	letter-spacing: 4px;
@@ -39,7 +43,7 @@ body {
 
 .title-content-page {
 	@extend .title-capital;
-	margin: 1em 0 1em 0;
+	margin: 0.5em 0 1em 0;
 	color: silver;
 	font-size: 4em;
 	text-align: center;
@@ -52,6 +56,9 @@ body {
    }
 	.nav-links-container {
 		padding: 1em;
+		div {
+			display: block !important;
+		}
 	}
 }
 
@@ -66,4 +73,27 @@ body {
 
 .p2 {
 	padding: 2em;
+}
+
+//All tables
+table {
+	width: 100%;
+	td {
+		vertical-align: top;
+		padding: 0.5em;
+		border-top: silver dashed 1px;
+	}
+	.leadtd {
+		font-weight: bold;
+	}
+}
+
+.list {
+	.fa {
+		margin: 0 1em;
+	}
+}
+
+.page-container {
+	margin-bottom: 150px;
 }

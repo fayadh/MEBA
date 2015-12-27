@@ -8,6 +8,15 @@ Template.SteelPartsAndSmelters.events({
 /* SteelPartsAndSmelters: Helpers */
 /*****************************************************************************/
 Template.SteelPartsAndSmelters.helpers({
+	'products': function() {
+		return [
+			'End Cover For Pneumatic Cylinder',
+			'Ingot Casting Wheel',
+			'',
+			'Tapping Tube',
+			'Tapping Tube'
+		]
+	}
 });
 
 /*****************************************************************************/

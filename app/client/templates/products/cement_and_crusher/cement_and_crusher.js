@@ -8,6 +8,18 @@ Template.CementAndCrusher.events({
 /* CementAndCrusher: Helpers */
 /*****************************************************************************/
 Template.CementAndCrusher.helpers({
+	'products': function() {
+		return [
+			'Pre-Cast Screw',
+			'Arm',
+			'Clinker Cooler',
+			'Rotor Cap',
+			'Tooth',
+			'Jaw Plate',
+			'Mix',
+			'Chain Link'
+		]
+	}
 });
 
 /*****************************************************************************/

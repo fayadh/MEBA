@@ -15,3 +15,29 @@ Template.registerHelper('subsection_name', function() {
 		return toTitleCase(subsection.replace(/_/g, ' '))
 	}
 })
+
+Template.registerHelper('encodeURI', function(string) {
+	return encodeURI(string)
+})
+
+
+Handlebars.registerHelper("math", function(lvalue, operator, rvalue, options) {
+    if (arguments.length < 4) {
+        // Operator omitted, assuming "+"
+        options = rvalue;
+        rvalue = operator;
+        operator = "+";
+    }
+        
+    lvalue = parseFloat(lvalue);
+    rvalue = parseFloat(rvalue);
+        
+    return {
+        "+": lvalue + rvalue,
+        "-": lvalue - rvalue,
+        "*": lvalue * rvalue,
+        "/": lvalue / rvalue,
+        "%": lvalue % rvalue
+    }[operator];
+});
+

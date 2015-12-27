@@ -4,6 +4,10 @@ Router.configure({
 	notFoundTemplate: 'NotFound'
 })
 
+Router.configure({
+    trackPageView: true
+});
+
 Router.route('/', {
   name: 'home',
   controller: 'HomeController',

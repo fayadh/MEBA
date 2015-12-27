@@ -8,6 +8,20 @@ Template.PumpParts.events({
 /* PumpParts: Helpers */
 /*****************************************************************************/
 Template.PumpParts.helpers({
+	'products': function() {
+		return [
+			'Impeller',
+			'Impeller',
+			'Impeller',
+			'',
+			'Valve Seat Ring',
+			'Valve Body',
+			'Open Impeller',
+			'Pump Casing',
+			'Pump Parts',
+			''	
+		]
+	}
 });
 
 /*****************************************************************************/
