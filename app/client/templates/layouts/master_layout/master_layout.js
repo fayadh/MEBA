@@ -43,6 +43,8 @@ Template.MasterLayout.events({
 });
 
 Template.MasterLayout.onRendered(function() {
-	// $('#contact-modal').modal({ show: false})
-	// $('#youtube-modal').modal({ show: false})
+	//Just incase you're in a home that's not the home page.
+	$('.nav-link').css('color', 'black')
+	$('.nav-link').mouseenter(function() { $(this).css('color', 'silver') })
+	$('.nav-link').mouseout(function() { $(this).css('color', 'black') })
 })
