@@ -1,6 +1,8 @@
 {
-  "public": {
-  },
-
-  "sample": "value"
+	"public": {
+		"ga": {
+			"id": "UA-71693785-1"
+		}
+	},
+	"sample": "value"
 }

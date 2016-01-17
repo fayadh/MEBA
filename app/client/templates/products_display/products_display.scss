@@ -5,7 +5,9 @@
 	.product-name {
 		font-size: large;
 		font-weight: bold;
-		opacity: 0.87;
+		opacity: 0.85;
+		letter-spacing: 1px;
+		border-bottom: solid grey 1px;
 	}
 	.inquire-container {
 		margin: 4em;

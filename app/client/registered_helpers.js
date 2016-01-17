@@ -16,6 +16,10 @@ Template.registerHelper('subsection_name', function() {
 	}
 })
 
+Template.registerHelper('routeIs', function(route) {
+	return Router.current().location.get().pathname === route
+})
+
 Template.registerHelper('encodeURI', function(string) {
 	return encodeURI(string)
 })
