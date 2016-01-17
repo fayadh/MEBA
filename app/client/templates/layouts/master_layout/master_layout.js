@@ -45,9 +45,9 @@ Template.MasterLayout.events({
 Template.MasterLayout.onRendered(function() {
 	//Just incase you're in a home that's not the home page.
 	if(Router.current().location.get().pathname !== '/') {
-		$('.nav-link').css('color', 'black')
-		$('.nav-link').mouseenter(function() { $(this).css('color', 'silver') })
-		$('.nav-link').mouseout(function() { $(this).css('color', 'black') })
+		$('.nav-link').css('color', 'grey')
+		$('.nav-link').mouseenter(function() { $(this).css('color', 'black') })
+		$('.nav-link').mouseout(function() { $(this).css('color', 'grey') })
 	}		
 })
 

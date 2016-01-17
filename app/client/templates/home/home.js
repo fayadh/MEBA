@@ -37,7 +37,7 @@ Template.Home.onRendered(function () {
 });
 
 Template.Home.onDestroyed(function () {
-	$('.nav-link').css('color', 'black')
-	$('.nav-link').mouseenter(function() { $(this).css('color', 'silver') })
-	$('.nav-link').mouseout(function() { $(this).css('color', 'black') })
+	$('.nav-link').css('color', 'grey')
+	$('.nav-link').mouseenter(function() { $(this).css('color', 'black') })
+	$('.nav-link').mouseout(function() { $(this).css('color', 'grey') })
 });
