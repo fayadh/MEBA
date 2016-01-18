@@ -86,7 +86,7 @@
 			display: initial;
 		}
 		.master-yield {	
-			background: white !important;
+			background: none !important;
 		}
 	}
 	/** END VIDEO BACKGROUND **/
@@ -94,6 +94,6 @@
 
 @media screen and (min-device-width: 900px) {
 	.master-yield {	
-		background: white !important;
+		background: none !important;
 	}
 }
