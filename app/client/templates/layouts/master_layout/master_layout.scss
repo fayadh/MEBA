@@ -21,6 +21,11 @@ nav {
 	
 	#MEBALogo {
 		width: 180px;
+		opacity: 0.66;
+		transition: opacity 0.5s;
+		&:hover {
+			opacity: 1;
+		};
 	}
 	#products-profile-container {
 		display: inline-block;
