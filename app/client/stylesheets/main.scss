@@ -92,6 +92,17 @@ table {
 	}
 }
 
+.pdfs {
+	padding: 0.5em 1em;
+	a {
+		color: white;
+		margin-right: 1em;
+		&:hover {
+			color: silver;
+		};
+	}
+}
+
 .list {
 	.fa {
 		margin: 0 1em;
