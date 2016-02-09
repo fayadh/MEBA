@@ -1,0 +1,33 @@
+<template name="News">
+	<div class="news">
+		<div class='row'>
+			<div class='col-md-8 col-md-offset-2'>
+				<h2>News</h2>
+				{{#if currentUser}}
+				<form id='add-news'>
+					<input name='headline' placeholder='Headline'>
+					<textarea name='content' placeholder='Add your content here.' rows=10></textarea>
+					<input type='submit' value='Add Article'>
+				</form>
+				{{/if}}
+	  
+				<div>
+					{{#if news}}
+					{{#each news}}
+					<div class='article'>
+						<div class='date'>{{to_date_string createdAt}}</div>
+						<h3 class='headline'>{{headline}}</h3>
+						<p class='content'>{{{content}}}</p>
+					</div>
+					{{#if currentUser}}
+					<div class='remove-article'><i class='fa fa-trash'></i>Delete</div>
+					{{/if}}
+					{{/each}}
+					{{else}}
+					MEBA has no news yet.
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

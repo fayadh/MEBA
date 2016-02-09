@@ -128,15 +128,15 @@ Router.route('profile/tool_room_and_pattern_shop', {
 ////					GLOBAL							 ////
 /////////////////////////////////////////////////////////////
 
-Router.route('about_us', {
-  name: 'aboutUs',
-  controller: 'AboutUsController',
+//Implement with FlowRouter.
+// Router.route('contact', {
+//   name: 'contactUs',
+//   controller: 'ContactUsController',
+//   where: 'client'
+// });
+
+Router.route('news', {
+  name: 'news',
+  controller: 'NewsController',
   where: 'client'
 });
-
-Router.route('contact', {
-  name: 'contactUs',
-  controller: 'ContactUsController',
-  where: 'client'
-});
-

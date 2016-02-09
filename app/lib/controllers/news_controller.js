@@ -1,4 +1,4 @@
-ContactUsController = RouteController.extend({
+NewsController = RouteController.extend({
   
   // a place to put your subscriptions
   // this.subscribe('items');
@@ -46,7 +46,7 @@ ContactUsController = RouteController.extend({
   //  action: 'myActionFunction'
   
   action: function () {
-	  $('#contact-trigger').click()
+    this.render();
   },
   onAfterAction: function () {
   },

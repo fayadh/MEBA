@@ -28,6 +28,10 @@ Template.registerHelper('add_', function(string) {
 	return string.replace(/ /g, "_").toLowerCase()
 })
 
+Template.registerHelper('to_date_string', function(date) {
+	return date.toDateString()
+})
+
 Handlebars.registerHelper("math", function(lvalue, operator, rvalue, options) {
     if (arguments.length < 4) {
         // Operator omitted, assuming "+"

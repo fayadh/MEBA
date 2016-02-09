@@ -1,0 +1,17 @@
+/*****************************************************************************/
+/* News: Style */
+/*****************************************************************************/
+.news {
+	height: 100vh;
+	.article {
+		.date {
+			text-align: right;
+			opacity: 0.66;
+		}
+		.headline {}
+		.content {
+			word-break: break-word;
+			white-space: pre-line;
+		}
+	}
+}
