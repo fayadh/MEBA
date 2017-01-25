@@ -5,18 +5,18 @@ Template.YoutubeModal.events({
 	'click #close-youtube-modal': function() {
 		//Send down.
 		$('.youtube-modal').css('top', '100%')
-		var current_route = Router.current().location.get().href
-		
+		var current_route = FlowRouter.current().path
+
 		//Re-play only on home.
 		if(current_route === '/') {
 			$('video')[0].play()
 		}
-		
+
 		Meteor.setTimeout(function() {
 			// remove
 			var view = Blaze.getView($('.youtube-modal')[0])
 			Blaze.remove(view)
-			
+
 		}, 1500)
 	}
 });
@@ -38,7 +38,7 @@ Template.YoutubeModal.onRendered(function () {
 	Meteor.setTimeout(function() {
 		$('.youtube-modal').css('top', '0%')
 	}, 500)
-	
+
 	//This function creates an <iframe> (and YouTube player)
      var player;
      function onYouTubeIframeAPIReady() {
@@ -59,7 +59,7 @@ Template.YoutubeModal.onRendered(function () {
      function stopVideo() {
        player.stopVideo();
      }
-	 
+
 	 onYouTubeIframeAPIReady()
 });
 

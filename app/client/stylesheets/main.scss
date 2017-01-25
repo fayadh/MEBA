@@ -8,10 +8,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-
-
 form {
-	input, textarea {
+	input,
+	textarea {
 		display: block;
 		padding: 0.5em;
 		margin: 1em 0;
@@ -23,17 +22,15 @@ form {
 	height: 100vh;
 }
 
-.main {
-}
+.main {}
 
 .lead {
-    color: grey;
-    padding-top: 1em;
+	color: grey;
+	padding-top: 1em;
 	font-size: 1.33em;
 }
 
-.content {
-}
+.content {}
 
 .cont {
 	padding: 1em;
@@ -45,7 +42,6 @@ form {
 	opacity: 0.5;
 	color: black;
 }
-
 //.container-fluid {
 //	padding: 0;
 //}
@@ -53,24 +49,25 @@ form {
 .title-capital {
 	text-transform: uppercase;
 	letter-spacing: 4px;
-	margin: 0 0 1em 0;
+	margin: 0 0 1em;
 }
 
 .title-content-page {
 	@extend .title-capital;
-	margin: 0.5em 0 1em 0;
+	margin: 0.5em 0 1em;
 	color: silver;
 	font-size: 4em;
 	text-align: center;
 }
-
 @media only screen and (max-width: $ss) {
-   .title-content-page { 
-	   font-size: 2em !important;
-	   line-height: 1.314em;
-   }
+	.title-content-page {
+		font-size: 2em !important;
+		line-height: 1.314em;
+	}
+
 	.nav-links-container {
 		padding: 1em;
+
 		div {
 			display: block !important;
 		}
@@ -80,8 +77,8 @@ form {
 .p1 {
 	padding: 1em;
 }
-
 //vertical padding
+
 .p1v {
 	padding: 1em 0;
 }
@@ -93,15 +90,17 @@ form {
 .profile {
 	margin-bottom: 125px;
 }
-
 //All tables
+
 table {
 	width: 100%;
+
 	td {
 		vertical-align: top;
 		padding: 0.5em;
 		border-top: silver dashed 1px;
 	}
+
 	.leadtd {
 		font-weight: bold;
 	}
@@ -109,9 +108,11 @@ table {
 
 .pdfs {
 	padding: 0.5em 1em;
+
 	a {
 		color: white;
 		margin-right: 1em;
+
 		&:hover {
 			color: silver;
 		};
@@ -131,8 +132,6 @@ table {
 .footer {
 	text-align: center;
 	color: silver;
-	padding: 1em;
-//	text-transform: uppercase;
-	font-size: 0.7	5em;
+	padding: 1em; //	text-transform: uppercase;
+	font-size: 0.7 5em;
 }
-	

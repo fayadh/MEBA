@@ -1,3 +1,5 @@
+const dynamics = require('dynamics.js')
+
 /*****************************************************************************/
 /* SideMenu: Event Handlers */
 /*****************************************************************************/
@@ -12,7 +14,7 @@ Template.SideMenu.events({
 				duration: 500,
 				friction: 500
 			})
-			
+
 			$('body').css('overflow', 'auto');
 
 			//set time out so that the animation can take its course
@@ -25,7 +27,7 @@ Template.SideMenu.events({
 	},
 	'click #logout': function() {
 		Meteor.logout()
-		Router.go('/')
+		FlowRouter.go('/')
 	}
 });
 
@@ -43,12 +45,12 @@ Template.SideMenu.onCreated(function () {
 
 Template.SideMenu.onRendered(function () {
 	var sm = $('.side-menu');
-	//hide it all. 
+	//hide it all.
 	//the 50px is to clear extra parts that show.
 	sm.css({
 		'transform': 'translateX(-'+ (sm.width() + 50) + 'px)'
 	})
-	
+
     dynamics.animate(document.querySelector('.side-menu'), {
    		translateX: 0,
    	}, {

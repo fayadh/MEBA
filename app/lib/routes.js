@@ -1,142 +1,170 @@
-Router.configure({
-	layoutTemplate: 'MasterLayout',
-	loadingTemplate: 'Loading',
-	notFoundTemplate: 'NotFound'
-})
-
-Router.configure({
-    trackPageView: true
-});
-
-Router.route('/', {
-  name: 'home',
-  controller: 'HomeController',
-  where: 'client'
+FlowRouter.route('/', {
+		name: 'home',
+    action: (params, queryParams) => {
+				BlazeLayout.render('MasterLayout', { main: "Home" });
+    }
 });
 
 /////////////////////////////////////////////////////////////
 ////					PRODUCTS						 ////
 /////////////////////////////////////////////////////////////
 
-Router.route('products', {
+
+FlowRouter.route('/products/alloys', {
+		name: 'alloys',
+    action: (params, queryParams) => {
+				BlazeLayout.render('MasterLayout', { main: "Alloys" });
+    }
+});
+
+FlowRouter.route('/products', {
   name: 'products',
-  controller: 'ProductsController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "Products"})
+	}
 });
 
-Router.route('products/alloys', {
+FlowRouter.route('/products/alloys', {
   name: 'alloys',
-  controller: 'AlloysController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "Alloys"})
+	}
 });
 
-Router.route('products/copper_based', {
+FlowRouter.route('/products/copper_based', {
   name: 'copperBased',
-  controller: 'CopperBasedController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "CopperBased"})
+	}
 });
 
-Router.route('products/steel_parts_and_smelters', {
+FlowRouter.route('/products/steel_parts_and_smelters', {
   name: 'steelPartsAndSmelters',
-  controller: 'SteelPartsAndSmeltersController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "SteelPartsAndSmelters"})
+	}
 });
 
-Router.route('products/cement_and_crusher', {
+FlowRouter.route('/products/cement_and_crusher', {
   name: 'cementAndCrusher',
-  controller: 'CementAndCrusherController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "CementAndCrusher"})
+	}
 });
 
-Router.route('products/oil_field_consumable_parts', {
+FlowRouter.route('/products/oil_field_consumable_parts', {
   name: 'oilFieldConsumableParts',
-  controller: 'OilFieldConsumablePartsController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "OilFieldConsumableParts"})
+	}
 });
 
-Router.route('products/aluminum_based', {
+FlowRouter.route('/products/aluminum_based', {
   name: 'aluminumBased',
-  controller: 'AluminumBasedController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "AluminumBased"})
+	}
 });
 
-Router.route('products/machined_parts', {
+FlowRouter.route('/products/machined_parts', {
   name: 'machinedParts',
-  controller: 'MachinedPartsController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "MachinedParts"})
+	}
 });
 
-Router.route('products/pump_parts', {
+FlowRouter.route('/products/pump_parts', {
   name: 'pumpParts',
-  controller: 'PumpPartsController',
-  where: 'client'
+  action: (params, queryParams) => {
+			BlazeLayout.render('MasterLayout', { main: "PumpParts"})
+	}
 });
 
-Router.route('products/drainage', {
+FlowRouter.route('/products/drainage', {
   name: 'drainage',
-  controller: 'DrainageController',
-  where: 'client'
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "Drainage"})
+	}
 });
 
 /////////////////////////////////////////////////////////////
 ////					PROFILE							 ////
 /////////////////////////////////////////////////////////////
 
-Router.route('profile', {
+FlowRouter.route('/profile', {
   name: 'profile',
-  controller: 'ProfileController',
-  where: 'client'
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "Profile"})
+	}
 });
 
-Router.route('profile/centrifugal_casting', {
+FlowRouter.route('/profile/centrifugal_casting', {
   name: 'centrifugalCasting',
-  controller: 'CentrifugalCastingController',
-  where: 'client'
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "CentrifugalCasting"})
+	}
 });
 
-Router.route('profile/foundry', {
+FlowRouter.route('/profile/chemical_division', {
+  name: 'centrifugalCasting',
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "ChemicalDivision"})
+	}
+});
+
+FlowRouter.route('/profile/foundry', {
   name: 'foundry',
-  controller: 'FoundryController',
-  where: 'client'
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "Foundry"})
+	}
 });
 
-Router.route('profile/heat_treatment', {
+FlowRouter.route('/profile/heat_treatment', {
   name: 'heatTreatment',
-  controller: 'HeatTreatmentController',
-  where: 'client'
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "HeatTreatment"})
+	}
 });
 
-Router.route('profile/machine_shop', {
+FlowRouter.route('/profile/machine_shop', {
   name: 'machineShop',
-  controller: 'MachineShopController',
-  where: 'client'
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "MachineShop"})
+	}
 });
 
-Router.route('profile/quality_control', {
+FlowRouter.route('/profile/quality_control', {
   name: 'qualityControl',
-  controller: 'QualityControlController',
-  where: 'client'
-});
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "QualityControl"})
+	}
+})
 
-Router.route('profile/tool_room_and_pattern_shop', {
+FlowRouter.route('/profile/tool_room_and_pattern_shop', {
   name: 'toolRoomAndPatternShop',
-  controller: 'ToolRoomAndPatternShopController',
-  where: 'client'
-}); 
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "ToolRoomAndPatternShop"})
+	}
+})
 
 /////////////////////////////////////////////////////////////
 ////					GLOBAL							 ////
 /////////////////////////////////////////////////////////////
 
-//Implement with FlowRouter.
-// Router.route('contact', {
-//   name: 'contactUs',
-//   controller: 'ContactUsController',
-//   where: 'client'
-// });
-
-Router.route('news', {
-  name: 'news',
-  controller: 'NewsController',
-  where: 'client'
+FlowRouter.route('/contact', {
+  name: 'contactUs',
+	action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "Contact"})
+	}
 });
+
+FlowRouter.route('/news', {
+  name: 'news',
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "News"})
+	}
+});
+
+// Router.configure({
+//     trackPageView: true
+// });

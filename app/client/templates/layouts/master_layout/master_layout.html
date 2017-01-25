@@ -1,8 +1,8 @@
 <template name="MasterLayout">
 	{{#if sideMenuToggle}}
-	{{> SideMenu}}
+		{{> SideMenu}}
 	{{/if}}
-	
+
 	<div class='master-yield container-fluid' style='{{#if routeIs "/"}}background-color: grey{{/if}}'>
 		<nav>
 			<a href="/">
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 		</nav>
-		{{> yield}}
+		{{> Template.dynamic template=main}}
 		{{> ContactUs}}
 		<div class='row footer'>
 			<div><span>Metals of Bahrain © 2015.</span> <span>Kingdom of Bahrain</span><img src='/BahrainIcon.png' style='width: 20px'/></div>

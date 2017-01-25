@@ -1,3 +1,5 @@
+const dynamics = require('dynamics.js')
+
 var slideX = function(querySelector, amount) {
 	dynamics.animate(document.querySelector(querySelector), {
 		translateX: amount
@@ -8,7 +10,7 @@ var slideX = function(querySelector, amount) {
 		friction: 1000,
 		anticipationStrength: 300
 	})
-} 
+}
 
 Template.MasterLayout.helpers({
 	'sideMenuToggle': function() {
@@ -31,7 +33,7 @@ Template.MasterLayout.events({
 			$('.home a').bind('click', function(e){
 	    		e.preventDefault();
 			})
-			slideX('#MEBALogo', -$('#MEBALogo').width() - 50)	
+			slideX('#MEBALogo', -$('#MEBALogo').width() - 50)
 		}
 	},
 	'click #trigger-youtube': function() {
@@ -44,11 +46,11 @@ Template.MasterLayout.events({
 
 Template.MasterLayout.onRendered(function() {
 	//Just incase you're in a home that's not the home page.
-	if(Router.current().location.get().pathname !== '/') {
+	if(FlowRouter.current().route.name !== '/') {
 		$('.nav-link').css('color', 'grey')
 		$('.nav-link').mouseenter(function() { $(this).css('color', 'black') })
 		$('.nav-link').mouseout(function() { $(this).css('color', 'grey') })
-	}		
+	}
 })
 
 Template.MasterLayout.onCreated(function() {
