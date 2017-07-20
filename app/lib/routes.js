@@ -133,6 +133,13 @@ FlowRouter.route('/profile/machine_shop', {
 	}
 });
 
+FlowRouter.route('/profile/oil_and_gas', {
+  name: 'oilAndGas',
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "OilAndGas"})
+	}
+});
+
 FlowRouter.route('/profile/quality_control', {
   name: 'qualityControl',
   action: (params, queryParams) => {

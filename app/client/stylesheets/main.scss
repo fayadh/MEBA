@@ -74,6 +74,11 @@ form {
 	}
 }
 
+.title-small {
+	@extend .title-capital;
+	font-size: 0.5em;
+}
+
 .p1 {
 	padding: 1em;
 }
