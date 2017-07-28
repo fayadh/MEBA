@@ -15,6 +15,9 @@ var slideX = function(querySelector, amount) {
 Template.MasterLayout.helpers({
 	'sideMenuToggle': function() {
 		return Session.get('sideMenuToggle')
+	},
+	'this_year': function() {
+		return new Date().getFullYear()
 	}
 });
 
