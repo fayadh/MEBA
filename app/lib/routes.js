@@ -140,6 +140,13 @@ FlowRouter.route('/profile/oil_and_gas', {
 	}
 });
 
+FlowRouter.route('/profile/partners', {
+  name: 'partners',
+  action: (params, queryParams) => {
+		BlazeLayout.render('MasterLayout', { main: "Partners"})
+	}
+});
+
 FlowRouter.route('/profile/quality_control', {
   name: 'qualityControl',
   action: (params, queryParams) => {
