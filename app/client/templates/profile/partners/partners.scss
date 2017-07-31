@@ -8,13 +8,15 @@
         li {
             list-style-type: none;
             display: block;
-            font-size: 2em;
+            font-size: 1.68em;
             text-transform: capitalize;
             color: grey;
         }
 
         img {
-            max-width: 50vw;
+            width: 100%;
+            max-width: 200px;
+            margin: .4em 0;  
         }
     }
 }
